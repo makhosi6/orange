@@ -1,0 +1,100 @@
+@import "./first";
+@import "./mediaQ";
+$font1:'Roboto',
+sans-serif;
+$theme1: #f4623a;
+$them2:#343a40;
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw !important;
+    font-family: $font1;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+.box {
+    background-image: url(/img/range.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    background-color: #725b4ea1;
+    position: absolute;
+    min-height: 100vh;
+    opacity: 80%;
+    .inner {
+        width: 400px;
+        margin: auto;
+        padding-top: 20px;
+        form {
+            margin: 0;
+        }
+        p {
+            color: white;
+            font-weight: bolder;
+        }
+        #name {
+            outline: none;
+            width: 90%;
+            padding: 0 20px;
+            margin: 10px 0;
+            height: 50px;
+            border: none;
+            border-radius: 40px;
+            -webkit-border-radius: 40px;
+            -moz-border-radius: 40px;
+            -ms-border-radius: 40px;
+            -o-border-radius: 40px;
+        }
+        #email {
+            width: 90%;
+            padding: 0 20px;
+            outline: none;
+            margin: 10px 0;
+            height: 50px;
+            border: none;
+            border-radius: 40px;
+            -webkit-border-radius: 40px;
+            -moz-border-radius: 40px;
+            -ms-border-radius: 40px;
+            -o-border-radius: 40px;
+        }
+        #mssg {
+            min-height: 40px !important;
+            width: 90%;
+            padding: 10px 20px;
+            outline: none;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+        .btn {
+            background-color: $theme1;
+            height: 40px;
+            margin-bottom: 50px;
+            width: 150px;
+            border: none;
+            border-radius: 40px;
+            font-weight: bolder;
+            &:hover {
+                background-color: $them2;
+            }
+        }
+    }
+}

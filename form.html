@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/styles/styles.css">
+
+    <link rel="stylesheet" href="./css/vendor/bootstrap/css/bootstrap.min.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="box">
+        <div class="inner">
+            <p class="lead">Fill the form</p>
+            <form>
+                <input placeholder="Type your name" type="text" name="" id="name">
+                <input placeholder="Type your email" type="email" name="email" id="email" required>
+                <textarea placeholder="Type your message" name="message" id="mssg" cols="30" rows="10" required></textarea>
+                <button type="button" class="btn btn-secondary bttn-2 display-6 ">Email</button>
+            </form>
+            <p class="lead thanks"></p>
+
+        </div>
+    </div>
+
+    <script>
+        const bt = document.querySelector('.btn');
+        const thanks = document.querySelector('.thanks');
+        const input_one = document.querySelector('#mssg');
+        const email = document.querySelector('#email');
+        const name = document.querySelector('#name');
+
+
+
+        bt.addEventListener('click', thanks_u);
+
+        function thanks_u() {
+            if (input_one.value != '' && email.value != '') {
+                console.log(name.value + "  " + email.value + "  " + input_one.value);
+                thanks.innerHTML = 'Thanks you. ';
+                setTimeout(function() {
+                    input_one.value = '';
+                    name.value = '';
+                    email.value = '';
+                }, 100)
+                setTimeout(function() {
+                    thanks.innerHTML = '';
+                }, 5000)
+            } else {
+                thanks.innerHTML = 'PLEASE FILL OUT.';
+            }
+
+        };
+    </script>
+</body>
+
+</html>
