@@ -96,7 +96,7 @@
 }
 
 .cont {
-    background-image: url('../img/range.jpg');
+    background-image: url("https://github.com/makhosi6/orange/tree/master/img/range.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -465,7 +465,7 @@ a {
 }
 
 .box {
-    background-image: url('img/range.jpg');
+    background-image: url('https://github.com/makhosi6/orange/tree/master/img/range.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
