@@ -465,7 +465,7 @@ a {
 }
 
 .box {
-    background-image: url('../img/range.jpg');
+    background-image: url("../img/range.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
