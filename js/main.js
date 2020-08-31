@@ -5,7 +5,7 @@ menu.addEventListener('click', open);
 
 function open() {
 
-
+window.navigator.vibrate(200);
     subMenu.style.visibility = 'visible';
     setTimeout(function() {
         subMenu.id = 'open';
